@@ -1,0 +1,190 @@
+@import "@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/digi-arbetsformedlingen.css";
+@import "@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/fonts/src/fonts.css";
+
+:root,
+button {
+  --digi--color--background--inverted-1: #a36b8c;
+  --digi--button--color--background--primary--hover: rgb(131, 45, 94);
+  --digi--button--color--background--primary--active: rgb(185, 63, 132);
+  --digi--button--color--background--primary--focus: black;
+  --digi--icon--color: black;
+  --digi--color--background--inverted-5: rgb(241, 216, 230);
+  --digi--button--color--text--secondary--default: black;
+  --digi--button--color--border--secondary--default: black;
+  --COLOR--BORDER--HOVER: black;
+  --BORDER--COLOR: black;
+  --COLOR--TEXT--HOVER: black;
+
+  --digi--button--color--text--function--default: #f05e85;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.sc-digi-logo-h .digi-logo--primary.sc-digi-logo{
+  --COLOR--BORDER: white;
+}
+
+.sc-digi-typography-heading-jumbo-h
+  .digi-typography-heading-jumbo.sc-digi-typography-heading-jumbo::after {
+  background-color: #f05e85;
+}
+
+.digi-header-navigation-item--active.sc-digi-header-navigation-item-s > a {
+  box-shadow: inset 0 -4px 0 0 #f05e85;
+}
+
+.sc-digi-header-navigation-item-h{
+  --digi--header-navigation-item--color-hover: black;
+  --digi--header-navigation-item--color-active: black;
+}
+
+/* logo */
+.sc-digi-logo-h .digi-logo__img.sc-digi-logo{
+  display: none;
+}
+
+
+/* CARDS */
+.sc-digi-info-card-multi-h .digi-info-card-multi__link.sc-digi-info-card-multi {
+  text-decoration: none;
+  color: var(--digi--color--text--primary);
+}
+
+.sc-digi-info-card-multi-h
+  .digi-info-card-multi--entry.sc-digi-info-card-multi {
+  margin-bottom: var(--digi--gutter--large);
+}
+
+.digi-info-card-multi__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 540px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.digi-info-card-multi {
+  border-radius: 0.75rem;
+}
+
+/* INPUT */
+.digi-form-input--button-variation-primary.digi-form-input--has-button-true.sc-digi-form-input .digi-form-input__input.sc-digi-form-input:focus{
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+/* Search button */
+.sc-digi-button-h .digi-button.sc-digi-button:hover {
+  border-color: rgb(133 45 94);
+}
+
+.sc-digi-button-h .digi-button.sc-digi-button,
+.digi-form-input__input.sc-digi-form-input {
+  border-color: black;
+}
+
+/* PAGINATION */
+.digi-layout-container .sc-digi-navigation-pagination-h:nth-of-type(1) .digi-navigation-pagination {
+  margin-bottom: var(--digi--margin--large);
+}
+.digi-layout-container .sc-digi-navigation-pagination-h:nth-of-type(2) .digi-navigation-pagination {
+  margin-top: var(--digi--margin--large);
+}
+
+.sc-digi-button-h .digi-button--variation-secondary.sc-digi-button {
+
+  --COLOR--TEXT--HOVER: black;
+  --COLOR--TEXT--FOCUS: black;
+    --COLOR--TEXT--ACTIVE: black;
+    --COLOR--ICON--DEFAULT: black;
+    --COLOR--ICON--HOVER: black;
+    --COLOR--ICON--FOCUS: black;
+    --COLOR--ICON--ACTIVE:black;
+}
+
+.hideme {
+  display: none;
+}
+
+.sc-digi-navigation-pagination svg {
+  --digi--icon--color: black;
+}
+
+
+/* Heart icon*/
+.sc-digi-icon-heart-solid-h svg.sc-digi-icon-heart-solid, .sc-digi-icon-heart-h svg.sc-digi-icon-heart{
+  color: #f05e85;
+}
+
+.sc-digi-button-h .digi-button--variation-function.sc-digi-button {
+  --COLOR--TEXT--HOVER: #f05e85;
+  --COLOR--TEXT--FOCUS: #f05e85;
+  --COLOR--TEXT--ACTIVE: #f05e85;
+  --COLOR--ICON--DEFAULT: #f05e85;
+  --COLOR--ICON--HOVER: #f05e85;
+  --COLOR--ICON--ACTIVE: #f05e85;
+}
+
+
+/* LINKS */
+.sc-digi-link-external-h {
+  --digi--link-external--color--default:#f05e85;
+}
+
+.sc-digi-link-s>a:visited {
+  color: #f05e85;
+}
+
+.sc-digi-link-s>a:visited svg {
+  color: #f05e85;
+}
+
+
+/*FOOTER*/
+.digi-footer__content-top {
+  display: none;
+}
+
+.sc-digi-footer-card-h {
+  --digi--footer-card--border-bottom: white;
+}
+
+
+/* exportera filer*/
+.exportcontainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-block: var(--digi--gutter--larger) ;
+}
+
+.sc-digi-form-select-h .digi-form-select__select.sc-digi-form-select:focus-visible{
+  box-shadow: none;
+}
+
+.exportcontainer .sc-digi-form-select-h .digi-form-select.sc-digi-form-select {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--digi--gutter--larger);
+}
+
+/*min heights*/
+
+.sc-digi-layout-block-h .digi-layout-block--secondary.sc-digi-layout-block, .digi-table {
+  min-height: 30vh;
+}
+
+/* table */
+
+.delete-all {
+display: flex;
+justify-content: flex-end;
+}
